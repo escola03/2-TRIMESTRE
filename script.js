@@ -6,72 +6,71 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Você acabou de comprar sua primeira moto e está se acostumando com a nova tecnologia. Qual é a sua primeira impressão?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Estou um pouco nervoso, é muita tecnologia nova para mim.",
+                afirmacao: "Você se sente um pouco inseguro com a nova tecnologia, mas está disposto a aprender."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Estou animado! Mal posso esperar para explorar todas as funcionalidades da moto.",
+                afirmacao: "Você está empolgado e quer aproveitar ao máximo as novas tecnologias da sua moto."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Durante uma aula de segurança de motocicletas, o instrutor pede que você escreva um relatório sobre as melhores práticas para manutenção de motos. Qual abordagem você escolhe?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Usa um aplicativo de manutenção de motos que sugere dicas e orientações específicas para a sua moto.",
+                afirmacao: "Você utilizou tecnologia para obter informações detalhadas e precisas para seu relatório."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "Baseia o relatório nas dicas que você já conhece, conversas com outros motociclistas e pesquisas na internet.",
+                afirmacao: "Você preferiu usar seus conhecimentos e recursos disponíveis para criar um relatório com um toque pessoal."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Após a elaboração do relatório, o instrutor realiza uma discussão sobre como a tecnologia das motos pode influenciar o futuro da pilotagem. Qual é a sua opinião?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "Acredito que a tecnologia das motos pode levar a inovações incríveis e tornar a pilotagem mais segura.",
+                afirmacao: "Você está otimista quanto às futuras inovações tecnológicas nas motos e acredita que isso melhorará a segurança e a experiência de pilotagem."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Estou preocupado com a possibilidade de que a tecnologia possa substituir a experiência pessoal e a habilidade dos motociclistas.",
+                afirmacao: "Você teme que a tecnologia possa desumanizar a pilotagem e impactar negativamente a conexão pessoal que os motociclistas têm com suas motos."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Você precisa criar uma imagem digital que represente o que você pensa sobre a evolução das motos. Como você faz isso?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Cria uma imagem utilizando um software de design gráfico como o Adobe Illustrator.",
+                afirmacao: "Você escolheu utilizar ferramentas avançadas de design para criar uma imagem detalhada e profissional."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Usa um gerador de imagens por IA para criar uma imagem rapidamente.",
+                afirmacao: "Você optou por uma solução rápida e tecnológica para criar sua imagem, aproveitando a eficiência dos geradores de imagem por IA."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Você está trabalhando em um projeto de grupo sobre o impacto da tecnologia nas motos e um dos membros do grupo utilizou a IA para gerar o texto do projeto. O problema é que o texto parece genérico e pouco original. O que você faz?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Acredita que usar a IA para gerar conteúdo é aceitável e decide entregar o texto como está.",
+                afirmacao: "Você começou a depender demais da IA para criar conteúdo e está se acostumando a não revisar o trabalho."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "A IA pode ajudar, mas é crucial revisar e personalizar o conteúdo para refletir o ponto de vista do grupo.",
+                afirmacao: "Você reconhece que a IA deve servir como um auxílio e não como substituto completo do trabalho criativo, e decide revisar e melhorar o texto gerado."
             }
         ]
     },
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -105,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Em um futuro próximo...";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
